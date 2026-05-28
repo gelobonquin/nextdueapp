@@ -805,6 +805,44 @@
   .cta-card .btn-store:hover { background: #fff; }
   @media (max-width: 640px) { .cta-card { padding: 56px 24px; } }
 
+    /* ---------- feedback band ---------- */
+  .feedback { padding: 40px 0 20px; }
+  .feedback-card {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    padding: 22px 28px;
+    box-shadow: var(--shadow-card);
+  }
+  .feedback-ico {
+    flex-shrink: 0;
+    width: 52px; height: 52px;
+    border-radius: 14px;
+    background: var(--blue-50);
+    color: var(--blue);
+    display: grid; place-items: center;
+  }
+  .feedback-copy { flex: 1; min-width: 0; }
+  .feedback-copy h3 {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 4px;
+  }
+  .feedback-copy p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  @media (max-width: 640px) {
+    .feedback-card { flex-direction: column; align-items: flex-start; gap: 18px; padding: 22px; }
+    .feedback-copy h3 { font-size: 16px; }
+  }
+
+
   /* ---------- footer ---------- */
   footer { padding: 36px 0 56px; color: var(--muted); }
   .foot {
@@ -848,6 +886,7 @@
     <symbol id="i-widget" viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="2" fill="currentColor"/><rect x="13" y="3" width="8" height="8" rx="2" fill="currentColor" opacity=".5"/><rect x="3" y="13" width="18" height="8" rx="2" fill="currentColor"/></symbol>
     <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2.4" fill="currentColor"/><path d="M8 10V8a4 4 0 0 1 8 0v2" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="12" cy="15.5" r="1.6" fill="#fff"/></symbol>
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-9l-4.5 3.5V17H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z" fill="currentColor"/><circle cx="9" cy="11" r="1.2" fill="#fff"/><circle cx="13" cy="11" r="1.2" fill="#fff"/><circle cx="17" cy="11" r="1.2" fill="#fff"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8.4 8 9 4.6-.6 8-4.5 8-9V6l-8-3Z" fill="currentColor"/><path d="m8.5 12 2.5 2.5L15.5 10" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="currentColor"/></symbol>
@@ -1220,6 +1259,24 @@
           <span class="small">Download on the</span>
           <span class="big">App Store</span>
         </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FEEDBACK ============================== -->
+<section class="feedback">
+  <div class="wrap">
+    <div class="feedback-card reveal">
+      <div class="feedback-ico"><svg width="24" height="24"><use href="#i-chat"/></svg></div>
+      <div class="feedback-copy">
+        <h3>Have feedback or found a bug?</h3>
+        <p>Tell us what's working, what isn't, or what's missing. It's a one-minute form and every reply is read.</p>
+      </div>
+      <a class="btn btn-blue" href="https://forms.gle/KpKLxe461bpeQCvT7" target="_blank" rel="noopener noreferrer">
+        <svg width="16" height="16"><use href="#i-bug"/></svg>
+        Send feedback
+        <svg class="arrow" width="16" height="16"><use href="#i-arrow"/></svg>
       </a>
     </div>
   </div>
