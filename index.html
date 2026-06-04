@@ -872,6 +872,53 @@
   }
 
 
+  /* ---------- product hunt badge ---------- */
+  .ph-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+  }
+  .ph-row img { display: block; }
+
+  /* ---------- testimonials ---------- */
+  .reviews { padding:  110px 0 20px; }
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  @media (max-width: 680px) { .reviews-grid { grid-template-columns: 1fr; } }
+  .review-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    padding: 26px 26px 28px;
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .review-stars { color: #F5A623; font-size: 18px; letter-spacing: 2px; line-height: 1; }
+  .review-title { font-size: 17px; font-weight: 700; letter-spacing: -0.01em; color: var(--ink); }
+  .review-text { font-size: 14.5px; color: var(--muted); line-height: 1.6; flex: 1; }
+  .review-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4px;
+  }
+  .review-meta .reviewer { font-size: 13px; font-weight: 600; color: var(--ink-700); }
+  .review-meta .source {
+    font-size: 12px;
+    color: var(--muted-2);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .review-meta .source svg { width: 13px; height: 13px; color: var(--muted-2); }
+
   /* ---------- footer ---------- */
   footer { padding: 36px 0 56px; color: var(--muted); }
   .foot {
@@ -990,7 +1037,7 @@
   <div class="wrap">
     <div class="hero-grid">
       <div class="hero-text">
-        <span class="eyebrow reveal"><span class="dot"></span> Now on iOS · Offline by default</span>
+        <span class="eyebrow reveal"><span class="dot"></span> <span style="color:#F5A623;letter-spacing:1px;">★★★★★</span> &nbsp;5.0 on the App Store</span>
         <h1 class="hero-title reveal" data-delay="1">Never miss a<br/><span class="accent">bill again.</span></h1>
         <p class="hero-sub reveal" data-delay="2">Track bills, due dates, payments, and home-screen widgets — all in one quiet little app that lives entirely on your phone.</p>
 
@@ -1006,6 +1053,9 @@
             View features
             <svg class="arrow" width="16" height="16"><use href="#i-arrow"/></svg>
           </a>
+        </div>
+        <div class="ph-row reveal" data-delay="4">
+          <a href="https://www.producthunt.com/products/nextdue-stay-ahead-of-every-bill?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-nextdue-stay-ahead-of-every-bill" target="_blank" rel="noopener noreferrer"><img alt="NextDue — Stay ahead of every bill - Simple bill &amp; subscription tracker | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1159063&theme=light&t=1780535286489"></a>
         </div>
 
         <div class="hero-trust reveal" data-delay="4">
@@ -1306,6 +1356,42 @@
   </div>
 </section>
 
+<!-- ============================== REVIEWS ============================== -->
+<section class="reviews">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:36px;">
+      <span class="kicker reveal">App Store Reviews</span>
+      <h2 class="section-title reveal" data-delay="1">Loved by users.</h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-title">Keep on Track!</div>
+        <p class="review-text">Never missed a due payment anymore!</p>
+        <div class="review-meta">
+          <span class="reviewer">Budgetarian_PH</span>
+          <span class="source">
+            <svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-apple"/></svg>
+            App Store
+          </span>
+        </div>
+      </div>
+      <div class="review-card reveal" data-delay="1">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-title">Highly Recommended 💯</div>
+        <p class="review-text">I've always been very traditional when it comes to tracking my bills and setting reminders. But since using this app, I rarely miss a due date and no longer have to worry about keeping track of everything. It offers multiple reminder options that make managing adult responsibilities so much easier. I'm truly grateful for how helpful this app has been. Kudos to the creator for developing such a practical tool!</p>
+        <div class="review-meta">
+          <span class="reviewer">Cody samuel</span>
+          <span class="source">
+            <svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-apple"/></svg>
+            App Store
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============================== FINAL CTA ============================== -->
 <section class="cta" id="download">
   <div class="wrap">
@@ -1320,6 +1406,9 @@
           <span class="big">App Store</span>
         </span>
       </a>
+      <div style="margin-top:20px;display:flex;justify-content:center;">
+        <a href="https://www.producthunt.com/products/nextdue-stay-ahead-of-every-bill?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-nextdue-stay-ahead-of-every-bill" target="_blank" rel="noopener noreferrer"><img alt="NextDue — Stay ahead of every bill - Simple bill &amp; subscription tracker | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1159063&theme=dark&t=1780535286489"></a>
+      </div>
     </div>
   </div>
 </section>
