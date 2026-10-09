@@ -1,0 +1,14 @@
+# NextDue
+
+> NextDue is a private, offline-first iOS bill tracker. Track due dates, mark payments, and see upcoming bills on a home-screen widget — no account needed.
+
+NextDue helps people track recurring bills and subscriptions entirely on-device. There is no account, no server sync, and no analytics tracking individual users. Core features: due-date tracking, quick bill entry, payment history, custom categories, home-screen widgets, light and dark mode, and bill scanning from a photo.
+
+## Pages
+
+- [Home](https://nextdueapp.vercel.app/): Product overview, features, screenshots, and App Store link.
+- [Privacy Policy](https://nextdueapp.vercel.app/privacy.html): Data handling and privacy details.
+
+## App
+
+- [Download on the App Store](https://apps.apple.com/app/nextdue-smart-bill-tracker/id6768552356)
